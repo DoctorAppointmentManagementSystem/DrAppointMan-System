@@ -1,0 +1,118 @@
+/* Reset default margin, padding, and font */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    height: 100vh; /* Set body height to full viewport height */
+    overflow: hidden; /* Prevent vertical scrollbar */
+}
+
+/* Banner styling */
+.banner {
+    position: fixed; /* Fixed position to cover full screen */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('yogini.jpg') center/cover no-repeat; /* Use shorthand for background properties */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Navbar styling */
+.banner .navbar {
+    margin-top: 5%;
+}
+
+.banner .navbar-brand {
+    color: #e91d43;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-left: 10%;
+}
+
+.banner .nav {
+    margin-right: 10%;
+}
+
+.banner .nav li a {
+    color: #000;
+    font-size: 1.2em;
+}
+
+/* Info section styling */
+.banner .info {
+    margin-top: 15%;
+}
+
+.banner .info h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.banner .info p {
+    font-size: 2em;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.banner .info a {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    background: #e91d43;
+    padding: 10px 20px;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.banner .info a:hover {
+    background: #e91e63;
+}
+
+/* Address styling */
+.info ul li {
+    list-style-type: none;
+    margin-left: -15px;
+    margin-bottom: 10px;
+    font-size: 1.3em;
+}
+
+/* Services and Facilities styling */
+.info h3 {
+    margin-top: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #e91d43;
+}
+
+.info ul {
+    list-style-type: none;
+    margin-left: -15px;
+    padding-left: 0;
+}
+
+.info ul li {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.info ul li:before {
+    content: "\2022"; /* Bullet point */
+    color: #e91d43;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    position: absolute;
+    left: 0;
+}
